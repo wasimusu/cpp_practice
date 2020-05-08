@@ -1,0 +1,17 @@
+./cmake-build-debug
+./idea
+*.out
+*.cbp
+*.log
+*.xml
+*.cmake
+*.o
+*.make
+*.txt
+*.iml
+
+# Ignore all
+*
+
+# Unignore cpp files
+!*.cpp
