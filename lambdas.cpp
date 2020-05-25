@@ -1,4 +1,11 @@
-#include <bits/stdc++.h>
+/**
+ * Demonstration of various usage of lambdas
+ * */
+
+#include <vector>
+#include <algorithm>
+#include <iostream>
+#include <random>
 
 using namespace std;
 

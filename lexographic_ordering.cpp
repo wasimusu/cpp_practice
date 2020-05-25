@@ -23,3 +23,7 @@ private:
     char c;
     double d;
 };
+
+int main() {
+    return 0;
+}
