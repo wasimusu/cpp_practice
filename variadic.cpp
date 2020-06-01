@@ -20,9 +20,19 @@ T add(T first, Args... args) {
     return first + add(args...);
 }
 
+// no base case required
+template <class... Args>
+auto add2(Args... args){
+    return (args + ...);
+}
+
 int main() {
     int sum = add(1, 2, 3, 4, 5, 6, 7, 8, 9);
     cout << sum << endl;
-    return 0;
+    assert(sum == 45);
 
+    int sum2 = add2(1, 2, 3, 4, 5, 6, 7, 8, 9);
+    cout << sum2 << endl;
+    assert(sum2 == 45);
+    return 0;
 }
